@@ -1,0 +1,17 @@
+@model YourNamespace.Models.Kitap
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitap Bilgileri</title>
+</head>
+<body>
+    <h1>Kitap Bilgileri</h1>
+    <p><strong>Kitap Adı:</strong> @Model.KitapAdi</p>
+    <p><strong>Yazar Adı:</strong> @Model.YazarAdi</p>
+    <p><strong>Yayınlanma Tarihi:</strong> @Model.YayinlanmaTarihi.ToShortDateString()</p>
+    <p><strong>Türü:</strong> @Model.Turu</p>
+    <p><strong>Sayfa Sayısı:</strong> @Model.SayfaSayisi</p>
+    <p><strong>Fiyat:</strong> @Model.Fiyat.ToString("C")</p>
+</body>
+</html>
