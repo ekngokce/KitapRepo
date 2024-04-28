@@ -4,7 +4,7 @@ public class KitapController : Controller
 {
     public ActionResult Index()
     {
-        // Örnek bir kitap oluşturuyoruz
+        
         var kitap = new Kitap
         {
             KitapAdi = "Yüzüklerin Efendisi",
@@ -12,10 +12,10 @@ public class KitapController : Controller
             YayinlanmaTarihi = new DateTime(1954, 7, 29),
             Turu = "Fantastik",
             SayfaSayisi = 1178,
-            Fiyat = 39.99m
+            Fiyat = 39.99tl
         };
 
-        // View katmanına kitabı gönderiyoruz
+        
         return View(kitap);
     }
 }
